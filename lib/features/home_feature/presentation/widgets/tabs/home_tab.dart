@@ -1,6 +1,7 @@
 import 'package:barber_shop/core/gen/assets.gen.dart';
 import 'package:barber_shop/core/theme/dimens.dart';
 import 'package:barber_shop/core/widgets/app_search_bar.dart';
+import 'package:barber_shop/features/home_feature/presentation/widgets/service_title_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeTab extends StatefulWidget {
@@ -26,6 +27,8 @@ class _HomeTabState extends State<HomeTab> {
             ),
             child: Assets.images.banner.image(fit: BoxFit.fitWidth),
           ),
+          SizedBox(height: Dimens.padding),
+          ServiceTitleWidget(title: 'Service categories', onPressed: () {}),
         ],
       ),
     );
