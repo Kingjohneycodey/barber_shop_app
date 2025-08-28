@@ -1,3 +1,4 @@
+import 'package:barber_shop/core/widgets/app_search_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeTab extends StatefulWidget {
@@ -10,6 +11,6 @@ class HomeTab extends StatefulWidget {
 class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text('Home Tab')));
+    return SingleChildScrollView(child: Column(children: [AppSearchBar()]));
   }
 }

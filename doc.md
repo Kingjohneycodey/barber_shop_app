@@ -14,6 +14,6 @@
 
 - add salomon_bottom_bar package to pubspec file
 
-- Setup tabs
+- Setup tabs in the home screen
 
-- 
+- Implement the home app bar
