@@ -12,4 +12,8 @@
 
 - Configure the path for flutter_gen
 
+- add salomon_bottom_bar package to pubspec file
+
 - Setup tabs
+
+- 
