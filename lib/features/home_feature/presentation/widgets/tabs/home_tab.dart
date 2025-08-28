@@ -1,3 +1,5 @@
+import 'package:barber_shop/core/gen/assets.gen.dart';
+import 'package:barber_shop/core/theme/dimens.dart';
 import 'package:barber_shop/core/widgets/app_search_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +13,21 @@ class HomeTab extends StatefulWidget {
 class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(child: Column(children: [AppSearchBar()]));
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          AppSearchBar(),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            padding: EdgeInsets.only(
+              top: Dimens.padding,
+              left: Dimens.largePadding,
+              right: Dimens.largePadding,
+            ),
+            child: Assets.images.banner.image(fit: BoxFit.fitWidth),
+          ),
+        ],
+      ),
+    );
   }
 }
