@@ -1,6 +1,8 @@
 import 'package:barber_shop/core/gen/assets.gen.dart';
 import 'package:barber_shop/core/theme/dimens.dart';
 import 'package:barber_shop/core/widgets/app_search_bar.dart';
+import 'package:barber_shop/features/home_feature/presentation/widgets/category_list.dart';
+import 'package:barber_shop/features/home_feature/presentation/widgets/service_list.dart';
 import 'package:barber_shop/features/home_feature/presentation/widgets/service_title_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -29,6 +31,17 @@ class _HomeTabState extends State<HomeTab> {
           ),
           SizedBox(height: Dimens.padding),
           ServiceTitleWidget(title: 'Service categories', onPressed: () {}),
+          CategoryList(),
+          SizedBox(height: Dimens.padding),
+          ServiceTitleWidget(title: 'Special offers', onPressed: () {}),
+          ServiceList(),
+          SizedBox(height: Dimens.padding),
+          ServiceTitleWidget(title: 'Nearby beauty salon', onPressed: () {}),
+          ServiceList(),
+          SizedBox(height: Dimens.padding),
+          ServiceTitleWidget(title: 'Popular services', onPressed: () {}),
+          ServiceList(),
+          SizedBox(height: Dimens.largePadding),
         ],
       ),
     );

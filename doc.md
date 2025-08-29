@@ -16,4 +16,10 @@
 
 - Setup tabs in the home screen
 
+- Build the homepage
+
 - Implement the home app bar
+
+- Implement list view for some sections
+
+- 
