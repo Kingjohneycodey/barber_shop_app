@@ -22,4 +22,10 @@
 
 - Implement list view for some sections
 
+- Build the search page
+
+- Build the calendar page
+
+- Implement the calendar app bar in the home screen
+
 - 
