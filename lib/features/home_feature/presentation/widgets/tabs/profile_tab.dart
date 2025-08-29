@@ -8,8 +8,16 @@ import 'package:barber_shop/core/widgets/app_list_tile.dart';
 import 'package:barber_shop/core/widgets/user_profile_image_widget.dart';
 import 'package:flutter/cupertino.dart';
 
-class ProfileTab extends StatelessWidget {
+class ProfileTab extends StatefulWidget {
   const ProfileTab({super.key});
+
+  @override
+  State<ProfileTab> createState() => _ProfileTabState();
+}
+
+class _ProfileTabState extends State<ProfileTab> {
+  bool _notificationsEnabled = true;
+  bool _darkModeEnabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -50,8 +58,12 @@ class ProfileTab extends StatelessWidget {
             trailing: Transform.scale(
               scale: 0.7,
               child: CupertinoSwitch(
-                value: true,
-                onChanged: (final value) {},
+                value: _notificationsEnabled,
+                onChanged: (final value) {
+                  setState(() {
+                    _notificationsEnabled = value;
+                  });
+                },
                 activeTrackColor: AppColors.primaryColor,
               ),
             ),
@@ -63,8 +75,12 @@ class ProfileTab extends StatelessWidget {
             trailing: Transform.scale(
               scale: 0.7,
               child: CupertinoSwitch(
-                value: false,
-                onChanged: (final value) {},
+                value: _darkModeEnabled,
+                onChanged: (final value) {
+                  setState(() {
+                    _darkModeEnabled = value;
+                  });
+                },
                 activeTrackColor: AppColors.primaryColor,
               ),
             ),
